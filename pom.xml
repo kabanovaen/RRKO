@@ -26,9 +26,20 @@
         <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-support</artifactId>
+        <version>3.6.0</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.github.pageobject</groupId>
+        <artifactId>pageobject-core</artifactId>
+        <version>1.0.1</version>
+    </dependency>
+    <dependency>
+    <groupId>ru.sbtqa.tag.pagefactory</groupId>
+    <artifactId>page-factory-api</artifactId>
+    <version>1.0-beta.3</version>
     </dependency>
 </dependencies>
 
