@@ -8,6 +8,46 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PayDocRuNew extends Page{
 
+  public WebElement getSaveField() {
+    return saveField;
+  }
+
+  public void setSaveField(WebElement saveField) {
+    this.saveField = saveField;
+  }
+
+  public WebElement getDocDateField() {
+    return docDateField;
+  }
+
+  public void setDocDateField(WebElement docDateField) {
+    this.docDateField = docDateField;
+  }
+
+  public WebElement getMessageField() {
+    return messageField;
+  }
+
+  public void setMessageField(WebElement messageField) {
+    this.messageField = messageField;
+  }
+
+  public WebElement getCalendarField() {
+    return calendarField;
+  }
+
+  public void setCalendarField(WebElement calendarField) {
+    this.calendarField = calendarField;
+  }
+
+  public static WebElement getButtonAccField() {
+    return buttonAccField;
+  }
+
+  public static void setButtonAccField(WebElement buttonAccField) {
+    PayDocRuNew.buttonAccField = buttonAccField;
+  }
+
   @FindBy(xpath = "//div[text()=\"Сохранить\"]")
   private WebElement saveField; //Кнопка "Сохранить"
 

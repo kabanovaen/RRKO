@@ -31,7 +31,7 @@ public class Tests {
   }
 
   @Test //3. Ввести дату ранее, чем текущая -11 дней, сохранить документ
-  public void DocDateWMinus11() throws Exception {
+  public void DocDateMinus11() throws Exception {
     PayDocRuNew payDocRuNew = new PayDocRuNew();
     // Устанавливаем дату по условию
     LocalDate newDate = currentDate.minusDays(11); //Убавляем у текущей даты 11 дней
@@ -47,7 +47,7 @@ public class Tests {
   }
 
   @Test //4. Ввести дату позднее, чем текущая +10 дней, сохранить документ
-  public void DocDateWPlus10() throws Exception {
+  public void DocDatePlus10() throws Exception {
     PayDocRuNew payDocRuNew = new PayDocRuNew();
     // Устанавливаем дату по условию
     LocalDate newDate = currentDate.plusDays(10); //Убавляем у текущей даты 11 дней
@@ -296,7 +296,7 @@ public class Tests {
     ReceiverAccount receiverAccount = new ReceiverAccount();
     receiverAccount.clickButtonAll();
     getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    List<WebElement> list = receiverAccount.tableField;
+    List<WebElement> list = receiverAccount.getTableField();
     for (WebElement row : list){
       List<WebElement> cells = row.findElements(By.xpath(".//div[contains(@class,'table__cell')]"));
       if ((cells.get(3).findElement(By.xpath(".//div")).getText().startsWith("40817")) || (cells.get(3).findElement(By.xpath(".//div")).getText().startsWith("40702"))){

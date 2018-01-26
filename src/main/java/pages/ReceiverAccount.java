@@ -9,6 +9,30 @@ package pages;
 
 public class ReceiverAccount extends Page{
 
+  public WebElement getButtonAllField() {
+    return buttonAllField;
+  }
+
+  public void setButtonAllField(WebElement buttonAllField) {
+    this.buttonAllField = buttonAllField;
+  }
+
+  public WebElement getButtonOKField() {
+    return buttonOKField;
+  }
+
+  public void setButtonOKField(WebElement buttonOKField) {
+    this.buttonOKField = buttonOKField;
+  }
+
+  public List<WebElement> getTableField() {
+    return tableField;
+  }
+
+  public void setTableField(List<WebElement> tableField) {
+    this.tableField = tableField;
+  }
+
   @FindBy(xpath = "//span[text()='Все']")
   private WebElement buttonAllField; //Кнопка "Все"
 

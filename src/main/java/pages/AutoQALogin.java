@@ -7,6 +7,29 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AutoQALogin extends Page{
+  public WebElement getLoginField() {
+    return loginField;
+  }
+
+  public void setLoginField(WebElement loginField) {
+    this.loginField = loginField;
+  }
+
+  public WebElement getPasswordField() {
+    return passwordField;
+  }
+
+  public void setPasswordField(WebElement passwordField) {
+    this.passwordField = passwordField;
+  }
+
+  public WebElement getButtonField() {
+    return buttonField;
+  }
+
+  public void setButtonField(WebElement buttonField) {
+    this.buttonField = buttonField;
+  }
 
   @FindBy(xpath = "//input[contains(@placeholder, 'Логин')]")
   private WebElement loginField;

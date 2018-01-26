@@ -7,6 +7,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends Page{
 
+  public WebElement getCreatePPField() {
+    return createPPField;
+  }
+
+  public void setCreatePPField(WebElement createPPField) {
+    this.createPPField = createPPField;
+  }
+
   @FindBy(xpath = "//div[contains(text(), 'Создать ПП')]")
   private WebElement createPPField;
 
